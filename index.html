@@ -1,12 +1,46 @@
 <html> 
     <head> 
-        <title> Crystal Game</title>
+        <title> Crystal Collector/title>
         <link rel="stylesheet" type="text/css" href="./CSS/reset.css">
-        <link rel="stylesheet" type="text/css" href="/CSS/main.css">
+        <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="assets/javascript/game.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
 <body> 
-    <h1> Crystals Collector Game! </h1>
-    <h3> Rules of the game: </h3>
-    <p>To start, you will be given a random number. You wi</p>
+    <div class="page-header">
+            <h1 class="text-center"> Crystals Collector Game! </h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12" id="instructions">
+            <strong>instructions</strong>
+        <p>You will be given a random number at the start of the game.</p>
+        <p>By clicking any of the crystals below, you will be adding a specific amount of points to your total score. </p>
+        <p>If your total score matches the random number generated, you win! If not, the game will restart with a diferent number and the value of each crystal WILL CHANGE.</p>
+        </div>
+    </div>
+
+    <div class"row">
+        <!-- Random Number-->
+<div class="col-md-4" id="randomNumDiv">
+    <p>Number generated: <div id="randomNum"></div></p>
+<!--Total Score-->
+    <div class="col-md-4" id="totalScore">
+        <p>Your total is: <div id="score"></div></p>
+    <!--Win Loss -->    
+        <div class="col-md-4" id="WinLoss">
+                <p>Wins: <div id="win"></div></p>
+                <p>Losses: <div id="loss"</p>
+            </div>
+    </div>
+</div>
+<div class="row" id="crystals">
+    <div class="col-md-3">
+        <button id="red"><img src="" alt="Red"></button>
+        <button id="green"><img src="" alt="Green"></button>
+        <button id="yellow"><img src="" alt="Yellow"></button>
+        <button id="black"><img src="" alt="Black"></button>
+    </div>
+</div>
 </body>
 </html>
